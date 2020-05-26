@@ -1,6 +1,10 @@
 import jwt from 'jsonwebtoken';
 import { secretPhrase } from '../utils/generateJWT';
 
+if (!secretPhrase) {
+    throw new Error("Unable to determine JWT required information.");
+}
+
 const getUserId = (request, requireAuth = true) => {
 
     const header = request.request ?
