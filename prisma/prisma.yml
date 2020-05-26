@@ -1,3 +1,3 @@
 endpoint: ${env:PRISMA_ENDPOINT}
 datamodel: datamodel.prisma
-secret: WOLKDF092ELKlkLKJLFJ#ULWMFW#UROIMLFKwjf02304lkdjfpasfd73#!$$
+secret: ${env:PRISMA_SECRET}
