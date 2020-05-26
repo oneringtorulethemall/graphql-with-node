@@ -1,6 +1,8 @@
 import jwt from 'jsonwebtoken';
+
 // change secretPhrase to come from environment
-const secretPhrase = "thegreatestsecret";
+const secretPhrase = process.env.JWT_SECRET;
+
 const defaultExpiration = '7 days';
 const generateJWT = (userID, expiresIn = defaultExpiration) => {
     //console.log('Expiration: ', expiresIn);
