@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import getUserId from '../utils/getUserId';
-import { generateJWT, secretPhrase } from '../utils/generateJWT';
+import { generateJWT } from '../utils/generateJWT';
 import hashPassword from '../utils/hashPassword';
 
 /*
