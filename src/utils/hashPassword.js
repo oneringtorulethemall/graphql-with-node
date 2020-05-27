@@ -12,7 +12,7 @@ const hashPassword = async (plainPassword) => {
     //  1 numeric character
     //  optional 1 space character (can only be 1 if present)
     // return promise!
-    return (jwt.hash(plainPassword, 10));
+    return (bcrypt.hash(plainPassword, 10));
 };
 
 
