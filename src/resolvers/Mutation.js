@@ -157,6 +157,7 @@ const Mutation = {
         // }
         // return user;
     },
+
     login: async (root, args, context, info) => {
         const { email, password } = args.data;
         const { prisma } = context;
@@ -182,7 +183,7 @@ const Mutation = {
         const { prisma, request } = context;
         const userID = getUserId(request);
 
-        console.log(args.data);
+        //console.log(args.data);
 
         return prisma.mutation.createPost(
             {

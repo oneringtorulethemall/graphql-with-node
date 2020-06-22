@@ -144,7 +144,7 @@ enum MutationType {
 type PostSubscriptionPayload {
    mutation: MutationType!
    # data: Post!
-   node: Post!
+   node: Post
 
 }
 
@@ -158,5 +158,5 @@ type CommentSubscriptionPayload {
     # data: Comment!
     # node is what graphql returns as the data element
     # for subscription.
-    node: Comment!
+    node: Comment
 }
